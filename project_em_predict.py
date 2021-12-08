@@ -3,6 +3,7 @@ from tensorflow.keras.models import load_model
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import random
+import tkinter as tk
 
 # Loading in the model
 # The model is trained on 19137 images from 3 different classes
@@ -82,6 +83,19 @@ def predict_class(model, filename):
     class_name = classes[tf.argmax(predict_x[0])]
     print(class_name, end = " ")
     print(random.choice(emoji_dictionary[class_name]))
+
+    root = tk.Tk()
+    logo = tk.PhotoImage(file=filename)
+
+    w1 = tk.Label(root, image=logo).pack(side="right")
+
+    explanation = class_name + " " + random.choice(emoji_dictionary[class_name])
+
+    w2 = tk.Label(root, 
+                justify=tk.LEFT,
+                padx = 10, 
+                text=explanation).pack(side="left")
+    root.mainloop()
 
 
 cam = cv2.VideoCapture(0)
