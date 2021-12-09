@@ -118,7 +118,6 @@ def predict_class(model, filename):
 
 
 cam = cv2.VideoCapture(0)
-cv2.resizeWindow(cam, 500, 500)
 
 cv2.namedWindow("Image_capture")
 
