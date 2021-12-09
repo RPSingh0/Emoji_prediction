@@ -1,4 +1,4 @@
-# Emoji_prediction
+# Emoji Prediction
 <img src="https://raw.githubusercontent.com/RPSingh0/Emoji_prediction/master/PPT%20PIC/ML_project/Slide1.JPG">
 <img src="https://raw.githubusercontent.com/RPSingh0/Emoji_prediction/master/PPT%20PIC/ML_project/Slide2.JPG">
 <img src="https://raw.githubusercontent.com/RPSingh0/Emoji_prediction/master/PPT%20PIC/ML_project/Slide3.JPG">
